@@ -20,7 +20,7 @@
             <h1>SPORT <small class="text-muted">Pedidos en linea</small></h1>
         </div>
 
-
+        <!--data-bs-whatever lo usamos para coloar un valo que representa el id del producto en un arreglo js de donde sacamos el detalle de producto-->
         <div class="row text-center" id="divProducto">
             <div class="col-sm-3">
                 <div class="card">
@@ -228,33 +228,62 @@
     </div>
 </body>
 
+<!--MODAL PARA MOSTRAR EL DETALLE DE LOS PRODUCTOS SEGUN ID-->
 <div class="modal fade" id="modalProducto" tabindex="-1" aria-labelledby="modalProductoLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="modalProductoLabel">Detalle del Producto</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <form>
-                <div class="mb-3">
-                  <label for="recipient-name" class="col-form-label">Recipient:</label>
-                  <input type="text" class="form-control" id="recipient-name">
+    <div class="modal-dialog modal-lx">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalProductoLabel">Detalle del Producto</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col col-xl-10">
+                        <div class="row g-0">
+                            <div class="col-md-6 col-lg-5 d-none d-md-block">
+                                <img src="" alt="login form" class="img-fluid" width='100%' height='190px'
+                                    id="imgModal" />
+                            </div>
+                            <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                                <div class="card-body p-4 p-lg-5 text-black">
+
+                                    <form>
+
+                                        <div class="d-flex align-items-center mb-3 pb-1">
+                                            <i class="fas fa-cubes fa-2x me-3"></i>
+                                            <span id="nombrePrdModal"
+                                                class="h1 fw-bold mb-0 text-primary">nombreProducto</span>
+                                        </div>
+
+                                        <div class="form-outline mb-4">
+                                            Antes: <label
+                                                class="form-label text-danger text-muted text-decoration-line-through"
+                                                for="form2Example17" id="precio1Modal"></label>
+                                            Ahora: <label class="form-label text-info" for="form2Example17"
+                                                id="precio2Modal"></label>
+                                        </div>
+
+                                        <p class="mb-5 pb-lg-2 text-success" id="descripModal">
+
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-3">
-                  <label for="message-text" class="col-form-label">Message:</label>
-                  <textarea class="form-control" id="message-text"></textarea>
-                </div>
-              </form>
-      
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
+
     </div>
-  </div>
-  
+</div>
+</div>
+
 
 </html>
