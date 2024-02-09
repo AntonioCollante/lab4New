@@ -10,65 +10,71 @@
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
     <script language="JavaScript" type="text/javascript" src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/frmPedidos.js"></script>
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css" />
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="#">Sport</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nosotros</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Pefil
-                        </a>
-                        <ul class="bg-primary dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Mis Datos</a></li>
-                            <li><a class="dropdown-item" href="#">Cambio Clave</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li class="nav-item dropend bg-primary">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Mis Pedidos
-                                </a>
-                                <ul class="dropdown-menu bg-primary">
-                                    <li><a class="dropdown-item" href="#">Lista Pedidos</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Nuevo Pedido</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Link</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar">
-                    <button class="btn btn-outline-light" type="submit">Buscar</button>
-                </form>
+    <!--INICIO MENU-->
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#">Sport</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pefil
+                            </a>
+                            <ul class="bg-primary dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Mis Datos</a></li>
+                                <li><a class="dropdown-item" href="#">Cambio Clave</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="nav-item dropend bg-primary">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Mis Pedidos
+                                    </a>
+                                    <ul class="dropdown-menu bg-primary">
+                                        <li><a class="dropdown-item" href="#">Lista Pedidos</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Nuevo Pedido</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Contactanos</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
+    <!--FIN MENU-->
 
-    <div class="container">
+    <!--INICIO MAIN-->
+    <main class="container">
 
         <div class="page-header">
             <h1>SPORT <small class="text-muted">Pedidos en linea</small></h1>
@@ -278,8 +284,54 @@
 
         </div>
 
+    </main>
+    <!--FIN MAIN-->
 
-    </div>
+    <!--INICIO FOOTER-->
+    <!--agregar fixed-bottom a class del footer para q sea fijo al mover la barra del navegador-->
+    <footer class="bg-primary text-center text-lg-start text-white">
+
+        <div class="p-4 pb-0">
+            <!-- inicio redes sociales -->
+            <section class="mb-4">
+
+                <!-- Facebook -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i
+                        class="fa fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i
+                        class="fa fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!" role="button"><i
+                        class="fa fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i
+                        class="fa fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" target="_blank" href="#!"
+                    role="button"><i class="fa fa-linkedin"></i></a>
+
+                <!-- Github -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #333333;" target="_blank"
+                    href="https://github.com/AntonioCollante" role="button"><i class="fa fa-github"></i></a>
+            </section>
+            <!-- fin redes sociales -->
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2024 Copyright:
+            <a class="text-white" href="#">sport.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!--FIN FOOTER-->
+
+
 </body>
 
 <!--MODAL PARA MOSTRAR EL DETALLE DE LOS PRODUCTOS SEGUN ID-->
