@@ -6,7 +6,10 @@
     <title>SPORT | Pedidos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css" />
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+    <script language="JavaScript" type="text/javascript" src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/frmPedidos.js"></script>
 </head>
 
 <body>
@@ -24,13 +27,14 @@
                     <div class="card-header">
                         Canilleras
                     </div>
-                    <div class="card-block" style="text-align: center;">
+                    <div class="card-block">
                         <img width='100%' height='190px' src='assets/img/canilleras.jpg' />
                         <p class="card-text"><del>S/. 180.00</del>
                         </p>
                         <p class="card-text text-muted">S/. 150.00
                         </p>
-                        <a href="#" class="btn btn-primary">Ver Detalle</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-whatever="1"
+                            data-bs-target="#modalProducto">Ver Detalle</button>
                     </div>
                     <div class="card-footer text-muted">
                         Válido hasta agotar stock
@@ -43,13 +47,14 @@
                     <div class="card-header">
                         Casco
                     </div>
-                    <div class="card-block" style="text-align: center;">
+                    <div class="card-block">
                         <img width='100%' height='190px' src='assets/img/casco.jpg' />
                         <p class="card-text"><del>S/. 100.00</del>
                         </p>
                         <p class="card-text text-muted">S/. 89.00
                         </p>
-                        <a href="#" class="btn btn-primary">Ver Detalle</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-whatever="2"
+                            data-bs-target="#modalProducto">Ver Detalle</button>
                     </div>
                     <div class="card-footer text-muted">
                         Válido hasta agotar stock
@@ -62,13 +67,14 @@
                     <div class="card-header">
                         Guantes
                     </div>
-                    <div class="card-block" style="text-align: center;">
+                    <div class="card-block">
                         <img width='100%' height='190px' src='assets/img/guantes.webp' />
                         <p class="card-text"><del>S/. 110.00</del>
                         </p>
                         <p class="card-text text-muted">S/. 90.00
                         </p>
-                        <a href="#" class="btn btn-primary">Ver Detalle</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-whatever="3"
+                            data-bs-target="#modalProducto">Ver Detalle</button>
                     </div>
                     <div class="card-footer text-muted">
                         Válido hasta agotar stock
@@ -81,13 +87,14 @@
                     <div class="card-header">
                         Pads
                     </div>
-                    <div class="card-block" style="text-align: center;">
+                    <div class="card-block">
                         <img width='100%' height='190px' src='assets/img/pads.jpg' />
                         <p class="card-text"><del>S/. 70.00</del>
                         </p>
                         <p class="card-text text-muted">S/. 65.00
                         </p>
-                        <a href="#" class="btn btn-primary">Ver Detalle</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-whatever="4"
+                            data-bs-target="#modalProducto">Ver Detalle</button>
                     </div>
                     <div class="card-footer text-muted">
                         Válido hasta agotar stock
@@ -100,13 +107,14 @@
                     <div class="card-header">
                         Pera Loca
                     </div>
-                    <div class="card-block" style="text-align: center;">
+                    <div class="card-block">
                         <img width='100%' height='190px' src='assets/img/peraloca.jpg' />
                         <p class="card-text"><del>S/. 50.00</del>
                         </p>
                         <p class="card-text text-muted">S/. 40.00
                         </p>
-                        <a href="#" class="btn btn-primary">Ver Detalle</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-whatever="5"
+                            data-bs-target="#modalProducto">Ver Detalle</button>
                     </div>
                     <div class="card-footer text-muted">
                         Válido hasta agotar stock
@@ -119,13 +127,14 @@
                     <div class="card-header">
                         Sacos
                     </div>
-                    <div class="card-block" style="text-align: center;">
+                    <div class="card-block">
                         <img width='100%' height='190px' src='assets/img/sacos.webp' />
                         <p class="card-text"><del>S/. 220.00</del>
                         </p>
                         <p class="card-text text-muted">S/. 190.00
                         </p>
-                        <a href="#" class="btn btn-primary">Ver Detalle</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-whatever="6"
+                            data-bs-target="#modalProducto">Ver Detalle</button>
                     </div>
                     <div class="card-footer text-muted">
                         Válido hasta agotar stock
@@ -136,15 +145,16 @@
             <div class="col-sm-3">
                 <div class="card">
                     <div class="card-header">
-                        Canilleras
+                        Short
                     </div>
-                    <div class="card-block" style="text-align: center;">
+                    <div class="card-block">
                         <img width='100%' height='190px' src='assets/img/short.webp' />
                         <p class="card-text"><del>S/. 150.00</del>
                         </p>
                         <p class="card-text text-muted">S/. 100.00
                         </p>
-                        <a href="#" class="btn btn-primary">Ver Detalle</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-whatever="7"
+                            data-bs-target="#modalProducto">Ver Detalle</button>
                     </div>
                     <div class="card-footer text-muted">
                         Válido hasta agotar stock
@@ -157,13 +167,14 @@
                     <div class="card-header">
                         Soga
                     </div>
-                    <div class="card-block" style="text-align: center;">
+                    <div class="card-block">
                         <img width='100%' height='190px' src='assets/img/soga.jpg' />
                         <p class="card-text"><del>S/. 30.00</del>
                         </p>
                         <p class="card-text text-muted">S/. 15.00
                         </p>
-                        <a href="#" class="btn btn-primary">Ver Detalle</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-whatever="8"
+                            data-bs-target="#modalProducto">Ver Detalle</button>
                     </div>
                     <div class="card-footer text-muted">
                         Válido hasta agotar stock
@@ -176,13 +187,14 @@
                     <div class="card-header">
                         Tobilleras
                     </div>
-                    <div class="card-block" style="text-align: center;">
+                    <div class="card-block" id="card10">
                         <img width='100%' height='190px' src='assets/img/tobilleras.jpg' />
                         <p class="card-text"><del>S/. 30.00</del>
                         </p>
                         <p class="card-text text-muted">S/. 20.00
                         </p>
-                        <a href="#" class="btn btn-primary">Ver Detalle</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-whatever="9"
+                            data-bs-target="#modalProducto">Ver Detalle</button>
                     </div>
                     <div class="card-footer text-muted">
                         Válido hasta agotar stock
@@ -195,13 +207,14 @@
                     <div class="card-header">
                         Vendas
                     </div>
-                    <div class="card-block" style="text-align: center;">
+                    <div class="card-block">
                         <img width='100%' height='190px' src='assets/img/vendas.webp' />
                         <p class="card-text"><del>S/. 25.00</del>
                         </p>
                         <p class="card-text text-muted">S/. 15.00
                         </p>
-                        <a href="#" class="btn btn-primary">Ver Detalle</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-whatever="10"
+                            data-bs-target="#modalProducto">Ver Detalle</button>
                     </div>
                     <div class="card-footer text-muted">
                         Válido hasta agotar stock
@@ -214,5 +227,34 @@
 
     </div>
 </body>
+
+<div class="modal fade" id="modalProducto" tabindex="-1" aria-labelledby="modalProductoLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalProductoLabel">Detalle del Producto</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Recipient:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Message:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 
 </html>
