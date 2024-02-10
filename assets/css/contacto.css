@@ -1,0 +1,62 @@
+.container-contacto {
+    width: 100%;
+    background-image: url("../img/contacto.jpg");
+    background-size: 100% 100%;
+    margin: 0;
+    padding: 96px 0;
+}
+
+.container-contacto form {
+    width: 350px;
+    margin: auto;
+    background: rgba(226, 13, 13, 0.4);
+    padding: 10px 10px;
+    margin-top: 10px;
+}
+
+.container-contacto form h2 {
+    color: #43f80c;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.container-contacto form input,
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 17px;
+}
+
+.container-contacto form textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+.container-contacto form input:not([type="submit"])::placeholder {
+    color: red;
+}
+
+.container-contacto form input:not([type="submit"]):hover {
+    color: green;
+}
+
+.container-contacto form input:not([type="submit"]):focus-visible {
+    color: rgb(62, 11, 245);
+}
+
+.container-contacto form input[type="submit"] {
+    border-radius: 15px;
+    background-color: rgb(136, 4, 4);
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 15px;
+    width: 100%;
+    margin: 0px auto;
+    cursor: pointer;
+}
