@@ -81,22 +81,53 @@
 
   <!--INICIO MAIN-->
   <main>
-    <div class="container-contacto">
-      <form action="#" id="form" method="POST">
-        <h2>CONTACTO</h2>
-        <br>
-        <input type="text" name="nombre" id="nombre" placeholder="Ingrese sus Nombres"
-          onkeypress="return sololetras(event)" onpaste="return false" required maxlength="50">
-        <input type="text" name="correo" id="correo" placeholder="Ingrese su Correo" required>
-        <input type="text" name="celular" id="celular" placeholder="Ingrese su Celular"
-          onkeypress="return solonumeros(event)" onpaste="return false" required maxlength="9">
-        <textarea name="mensaje" placeholder="Escriba su Mensaje" required></textarea>
-        <input type="submit" id="button-contacto" value="ENVIAR" class="button"
-          onclick="validarCorreo(form.correo.value)">
-      </form>
+    <div class="container contact">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="contact-info">
+            <img src="assets/img/contacto.png" class="img-fluid" alt="image" />
+            <h2>Contactenos</h2>
+            <h4>Nos Encantará que te Comuniques con nosotros.</h4>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="contact-form">
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="nombre">Nombres:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="nombre" placeholder="Ingrese Nombres" name="nombre">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="apellido">Apellidos:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="apellido" placeholder="Ingrese Apellidos" name="apellido">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="email">Email:</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="email" placeholder="Ingrese Email" name="email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="comentario">Comentario:</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" rows="5" id="comentario"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Enviar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
   </main>
-  </br>
+
   <!--FIN MAIN-->
 
   <!--INICIO FOOTER-->
