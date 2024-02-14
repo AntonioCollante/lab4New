@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css" />
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/registrate.js"></script>
     <style>
         .border-md {
             border-width: 1px;
@@ -16,6 +19,11 @@
 </head>
 
 <body>
+
+    <!-- inicio div donde se muestra el mensaje de alert -->
+    <div id=alert_msg></div>
+    <!-- fin div donde se muestra el mensaje de alert -->
+
 
     <div class="container">
         <div class="row py-5 mt-4 align-items-center">
@@ -39,7 +47,7 @@
                                 </span>
                             </div>
                             <input id="nombres" type="text" name="nombres" placeholder="Nombres"
-                                class="form-control bg-white border-left-0 border-md">
+                                class="form-control bg-white border-left-0 border-md" maxlength="120">
                         </div>
 
                         <!-- Apellidos -->
@@ -50,7 +58,7 @@
                                 </span>
                             </div>
                             <input id="apellidos" type="text" name="apellidos" placeholder="Apellidos"
-                                class="form-control bg-white border-left-0 border-md">
+                                class="form-control bg-white border-left-0 border-md" maxlength="120">
                         </div>
 
                         <!-- Email -->
@@ -61,7 +69,7 @@
                                 </span>
                             </div>
                             <input id="email" type="email" name="email" placeholder="Email"
-                                class="form-control bg-white border-left-0 border-md">
+                                class="form-control bg-white border-left-0 border-md" maxlength="70">
                         </div>
 
                         <!-- telefono -->
@@ -73,13 +81,14 @@
                             </div>
                             <select id="ciudadCode" name="ciudadCode" style="max-width: 80px"
                                 class="custom-select form-control bg-white border-left-0 border-md h-100 font-weight-bold text-muted">
-                                <option value="">+51</option>
-                                <option value="">+10</option>
-                                <option value="">+15</option>
-                                <option value="">+18</option>
+                                <option value="" disabled selected hidden>Cod Telf</option>
+                                <option value="51">+51</option>
+                                <option value="10">+10</option>
+                                <option value="15">+15</option>
+                                <option value="18">+18</option>
                             </select>
                             <input id="telefono" type="tel" name="telefono" placeholder="Telefono"
-                                class="form-control bg-white border-md border-left-0 pl-3">
+                                class="form-control bg-white border-md border-left-0 pl-3" maxlength="11">
                         </div>
 
                         <!-- clave -->
@@ -90,7 +99,8 @@
                                 </span>
                             </div>
                             <input id="password" type="password" name="password" placeholder="Password"
-                                class="form-control bg-white border-left-0 border-md">
+                                class="form-control bg-white border-left-0 border-md" maxlength="20"></br>
+                            <span id="passstrength"></span>
                         </div>
 
                         <!-- confirmar clave -->
@@ -100,15 +110,14 @@
                                     <i class="fa fa-lock text-muted"></i>
                                 </span>
                             </div>
-                            <input id="passwordConfirmation" type="text" name="passwordConfirmation"
+                            <input id="passwordConfirmation" type="password" name="passwordConfirmation" maxlength="20"
                                 placeholder="Confirm Password" class="form-control bg-white border-left-0 border-md">
                         </div>
 
                         <!-- Submit Button -->
                         <div class="form-group col-lg-12 mx-auto mb-0">
-                            <a href="#" class="btn btn-primary btn-block py-2">
-                                <span class="font-weight-bold">Crear Cuenta</span>
-                            </a>
+                            <button type="button" id="registrar" name="registrar" class="btn btn-primary btn-sm"
+                                style="padding-left: 2.5rem; padding-right: 2.5rem;">Crear Cuenta</button>
                         </div>
 
                         <!-- Already Registered -->
